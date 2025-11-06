@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portolio | Juana Abril Trinidad</title>
+    <!-- Tailwind CSS -->
+    <link href="./src/output.css" rel="stylesheet">
+    <!-- Fuente tipo Minecraft -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> 
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .neon { text-shadow: 0 0 6px #ff55d1, 0 0 18px #ff55d1, 0 0 30px #d94cf0; }
+        
+        html {
+        scroll-behavior: smooth;
+        }
+</style>
+</head>
+<body class="bg-[#0a0012] text-fuchsia-300 font-mono">
+<!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 flex justify-center bg-[#07060a]/70 backdrop-blur-sm py-4 px-4 border-b border-fuchsia-600/20 transition-all duration-500">
+        <div class="max-w-6xl w-full flex justify-center">
+        <div class="flex items-center gap-4 text-sm">
+        <a href="#inicio" class="px-4 py-2 border border-fuchsia-600 text-fuchsia-300 rounded-md hover:bg-fuchsia-800/20 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Inicio </a>
+        <a href="#sobremi" class="px-4 py-2 border border-fuchsia-600 text-fuchsia-300 rounded-md hover:bg-fuchsia-800/20 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Sobre mí </a>
+        <a href="#skills" class="px-4 py-2 border border-fuchsia-600 text-fuchsia-300 rounded-md hover:bg-fuchsia-800/20 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Skills </a>
+        <a href="#proyectos" class="px-4 py-2 border border-fuchsia-600 text-fuchsia-300 rounded-md hover:bg-fuchsia-800/20 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Proyectos </a>
+        <a href="#contacto" class="px-4 py-2 border border-fuchsia-600 text-fuchsia-300 rounded-md hover:bg-fuchsia-800/20 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Contacto </a>
+        </div>
+        </div>
+    </nav>
+
+<!-- HERO -->
+<section id="inicio" class="relative h-screen flex items-center justify-center text-center overflow-hidden pt-16">
+    <!-- Video de fondo -->
+    <div class="absolute inset-0 z-0">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover" id="bgVideo">
+    <source src="./archivos/fondo.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="relative z-10 max-w-6xl w-full px-6">
+    <div id="heroGroup" class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 animate-fadeIn">
+    <!-- Imagen circular -->
+        <div id="heroImageWrap" class="flex justify-center items-center animate-fadeIn delay-300">
+        <div class="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-fuchsia-500 shadow-[0_0_25px_#ff00ff] bg-[#0a0012] flex justify-center items-center">
+        <img id="heroImage" src="./archivos/tu-foto.png" alt="Juana Abril Trinidad" class="w-full h-full object-cover"/>
+        </div>
+        </div>
+    <!-- Separador -->
+      <div id="heroDivider" class="hidden md:block h-40 w-0.5 bg-fuchsia-500 mx-3 rounded-full shadow-[0_0_20px_#ff00ff] animate-fadeIn delay-500"></div>
+    <!-- Texto -->
+        <div class="text-center md:text-left md:ml-1 lg:ml-1 animate-fadeIn delay-700">
+        <h1 id="heroTitle" class="text-3xl md:text-5xl text-white font-bold drop-shadow-[0_0_10px_#c800ff] select-none">
+          JUANA ABRIL
+          <span class="text-fuchsia-400 block md:inline">TRINIDAD</span>
+        </h1>
+        <p class="mt-6 text-fuchsia-200 text-xs md:text-base">
+          Desarrolladora Backend Junior • C++ · C#
+        </p>
+    <!-- Botones -->
+        <div class="mt-6 flex justify-center md:justify-start gap-3 text-xs md:text-sm">
+        <a href="#sobremi" class="px-4 py-2 border border-fuchsia-500 rounded-md text-fuchsia-300 hover:bg-fuchsia-700/30 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Sobre mí
+        </a>
+        <a href="#proyectos" class="px-4 py-2 border border-fuchsia-500 rounded-md text-fuchsia-300 hover:bg-fuchsia-700/30 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Ver proyectos
+        </a>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobremi" class="relative min-h-screen flex items-center justify-center py-24 px-6 bg-[#0d0012] border-t border-fuchsia-800/30">
+  <div class="max-w-4xl text-center md:text-left animate-fadeIn">
+    <h2 class="text-2xl md:text-4xl font-bold text-white neon mb-8 text-center">
+      <span class="text-fuchsia-400">></span> SOBRE MÍ
+    </h2>
+    <p class="text-fuchsia-200 text-xs md:text-sm leading-relaxed md:leading-loose">
+      ¡Hola! Soy <span class="text-fuchsia-400">Juana Abril Trinidad</span>, una desarrolladora backend junior con pasión por crear cosas desde cero,
+      resolver problemas y aprender constantemente. Me encanta programar en <span class="text-fuchsia-300">C++</span> y <span class="text-fuchsia-300">C#</span>,
+      y disfruto ver cómo una idea se transforma en algo que realmente funciona.
+    </p>
+
+    <p class="mt-6 text-fuchsia-200 text-xs md:text-sm leading-relaxed md:leading-loose">
+      Me considero una persona curiosa, perseverante y detallista. Siempre busco mejorar mis proyectos, aprender nuevas tecnologías
+      y compartir mis conocimientos con otros. Además, tengo un gran interés por el diseño de videojuegos, la lógica y los desafíos
+      de optimización en el código.
+    </p>
+
+    <div class="mt-10 flex justify-center md:justify-start">
+      <a href="#proyectos" class="px-6 py-3 border border-fuchsia-500 rounded-md text-fuchsia-300 text-xs md:text-sm hover:bg-fuchsia-700/30 hover:text-white hover:shadow-[0_0_10px_#ff00ff] transition-all duration-300">
+        Ver mis proyectos
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="relative min-h-screen flex flex-col items-center justify-center py-24 px-6 bg-[#0a0012] border-t border-fuchsia-800/30">
+    <div class="text-center animate-fadeIn">
+    <h2 class="text-2xl md:text-4xl font-bold text-white neon mb-12">
+      <span class="text-fuchsia-400">></span> SKYLLS
+    </h2>
+
+    <!-- Contenedor de íconos -->
+    <div class="flex flex-wrap justify-center gap-10 text-center">
+
+    <!-- C++ -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-cplusplus-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">C++</p>
+      </div>
+    <!-- C# --> 
+      <div class="flex flex-col items-center">
+        <i class="devicon-csharp-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">C#</p>
+      </div>
+    <!-- .NET -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-dot-net-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">.Net</p>
+      </div>
+    <!-- SQL -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-azuresqldatabase-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">SQL</p>
+      </div>
+    <!-- SQLITE -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-sqlite-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">SQLITE</p>
+      </div>
+    <!-- HTML -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-html5-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">HTML</p>
+      </div>
+    <!-- CSS -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-css3-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">CSS</p>
+      </div>
+    <!-- JS -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-javascript-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">JavaScript</p>
+      </div>
+    <!-- GIT -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-git-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">Git</p>
+      </div>
+    <!-- GIT-HUB -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-github-original text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">GitHub</p>
+      </div>
+    <!-- VS CODE -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-vscode-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">VS Code</p>
+      </div>
+    <!-- PHOTOSHOP -->
+      <div class="flex flex-col items-center">
+        <i class="devicon-photoshop-plain text-6xl text-fuchsia-400 hover:text-fuchsia-300 transition-all duration-300 drop-shadow-[0_0_10px_#ff00ff]"></i>
+        <p class="mt-3 text-xs text-fuchsia-300">Photoshop</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS --> 
+<section id="proyectos" class="py-24 px-6 border-t bg-[#0d0012] border-fuchsia-800/30">
+  <div class="max-w-6xl mx-auto">
+      <h2 class=" text-center text-2xl md:text-4xl font-bold text-white neon mb-12">
+        <span class="text-fuchsia-400">></span> PROYECTOS
+      </h2>      
+      <!-- GRID PROYECTOS -->
+      <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+<!-- PROYECTO 4 -->
+        <article class="project-card reveal border border-fuchsia-600/20 rounded-xl overflow-hidden bg-[#0f0d12] p-4 
+            shadow-[0_0_15px_#ff00ff40] hover:shadow-[0_0_25px_#ff00ff90] 
+            transition-all duration-300 scale-95 hover:scale-100" 
+            data-skills='["cpp","web"]' id="proj-1">
+          <div class="h-40 bg-linear-to-br from-fuchsia-600/20 to-black rounded-md flex items-center justify-center overflow-hidden mb-4">
+              <img src="./archivos/PROYECTO 1/detalle1.png" alt="Sistema Supermercado" class="object-cover w-full h-full" onerror="this.onerror=null; this.src='https://placehold.co/400x160/280824/ff55d1?text=PROYECTO+1'"/>
+          </div>
+          <h3 class="font-bold text-fuchsia-300 font-mono">Sistema Gestor Catalogo </h3>
+          <p class="text-sm text-gray-300 my-2 font-mono">Aplicacion de escritorio para un catalogo. Administracion de productos tecnologicos. Trabajo Final Curso .net Maxi Programa</p>
+          </p>
+          <h3 class="font-bold text-fuchsia-600 font-mono">FINALIZADO </h3>
+          <div class="flex items-center justify-between mt-4">
+              <div class="flex gap-2 items-center">
+                <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">C#</span>
+                  <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">.NET Winforms</span>
+                </div>
+              <a href="#" target="_blank" class="px-3 py-1 bg-fuchsia-500 text-black rounded font-semibold hover:brightness-105 transition font-mono">GitHub</a>
+          </div>
+        </article>
+
+<!-- PROYECTO 3 -->
+        <article class="project-card reveal border border-fuchsia-600/20 rounded-xl overflow-hidden bg-[#0f0d12] p-4 
+              shadow-[0_0_15px_#ff00ff40] hover:shadow-[0_0_25px_#ff00ff90] 
+              transition-all duration-300 scale-95 hover:scale-100" 
+              data-skills='["cpp","web"]' id="proj-1">
+            <div class="h-40 bg-linear-to-br from-fuchsia-600/20 to-black rounded-md flex items-center justify-center overflow-hidden mb-4">
+                <img src="./archivos/proyecto3.png" alt="Sistema Supermercado" class="object-cover w-full h-full" onerror="this.onerror=null; this.src='https://placehold.co/400x160/280824/ff55d1?text=PROYECTO+1'"/>
+            </div>
+            <h3 class="font-bold text-fuchsia-300 font-mono">Sistema para Supermercado </h3>
+            <p class="text-sm text-gray-300 my-2 font-mono">Sistema eleborado en c· .net MAUI. Con fines de manejar el stock, entradas y salidas, cargar ventas, crear facturas, etc.</p>
+          </p>
+          <h3 class="font-bold text-fuchsia-600 font-mono">EN PROCESO... </h3>
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex gap-2 items-center">
+              <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">C#</span>
+              <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">.NET</span>
+                    <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">SQLite</span>
+                  </div>
+                  <a href="#" target="_blank" class="px-3 py-1 bg-fuchsia-500 text-black rounded font-semibold hover:brightness-105 transition font-mono">GitHub</a>
+                </div>
+              </article>
+              
+<!-- PROYECTO 2 -->
+        <article class="project-card reveal border border-fuchsia-600/20 rounded-xl overflow-hidden bg-[#0f0d12] p-4 
+              shadow-[0_0_15px_#ff00ff40] hover:shadow-[0_0_25px_#ff00ff90] 
+              transition-all duration-300 scale-95 hover:scale-100" 
+              data-skills='["cpp","web"]' id="proj-1">
+            <div class="h-40 bg-linear-to-br from-fuchsia-600/20 to-black rounded-md flex items-center justify-center overflow-hidden mb-4">
+                <img src="./archivos/proyecto2.png" alt="Sistema Gestor Para Cine" class="object-cover w-full h-full" onerror="this.onerror=null; this.src='https://placehold.co/400x160/280824/ff55d1?text=PROYECTO+1'"/>
+            </div>
+            <h3 class="font-bold text-fuchsia-300 font-mono">Sistema Gestor - Cine </h3>
+            <p class="text-sm text-gray-300 my-2 font-mono">Sistema de consola de c++, para gestionar ventas de entradas para un cine. Con registro de Peliculas, Entradas y Salas.</p>
+            </p>
+            <h3 class="font-bold text-fuchsia-600 font-mono">FINALIZADO </h3>
+            <div class="flex items-center justify-between mt-4">
+                <div class="flex gap-2 items-center">
+                    <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">C++</span>
+                </div>
+                <a href="#" target="_blank" class="px-3 py-1 bg-fuchsia-500 text-black rounded font-semibold hover:brightness-105 transition font-mono">GitHub</a>
+            </div>
+        </article>
+
+<!-- PROYECTO 1 -->
+        <article class="project-card reveal border border-fuchsia-600/20 rounded-xl overflow-hidden bg-[#0f0d12] p-4 
+        shadow-[0_0_15px_#ff00ff40] hover:shadow-[0_0_25px_#ff00ff90] 
+        transition-all duration-300 scale-95 hover:scale-100" 
+                  data-skills='["cpp","web"]' id="proj-1">
+                <div class="h-40 bg-linear-to-br from-fuchsia-600/20 to-black rounded-md flex items-center justify-center overflow-hidden mb-4">
+                    <img src="./archivos/proyecto1.png" alt="ChimpocoFight" class="object-cover w-full h-full" onerror="this.onerror=null; this.src='https://placehold.co/400x160/280824/ff55d1?text=PROYECTO+1'"/>
+                </div>
+                <h3 class="font-bold text-fuchsia-300 font-mono">ChimpocoFight</h3>
+                <p class="text-sm text-gray-300 my-2 font-mono">Juego de consola enfocado al combate por turnos desarrollado en C++ con lógica de pasivas, pociones y estadísticas.</p>
+                <h3 class="font-bold text-fuchsia-600 font-mono">FINALIZADO </h3>
+                <div class="flex items-center justify-between mt-4">
+                    <div class="flex gap-2 items-center">
+                        <span class="px-2 py-1 text-xs bg-[#09070a] rounded text-gray-300 border border-fuchsia-900 font-mono">C++</span>
+                    </div>
+                    <a href="#" target="_blank" class="px-3 py-1 bg-fuchsia-500 text-black rounded font-semibold hover:brightness-105 transition font-mono">GitHub</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="relative min-h-screen flex flex-col items-center justify-center py-24 px-6 bg-[#0a0012] border-t border-fuchsia-800/30">
+  <div class="max-w-3xl w-full text-center animate-fadeIn">
+    <h2 class="text-2xl md:text-4xl font-bold text-white neon mb-8">
+      <span class="text-fuchsia-400">></span> CONTACTO
+    </h2>
+    <p class="text-fuchsia-200 text-xs md:text-sm mb-10">
+      ¿Querés ponerte en contacto conmigo? Completá el formulario o escribime directamente en mis redes.
+    </p>
+
+    <!-- FORMULARIO -->
+    <form id="contactForm" action="https://formspree.io/f/xeopynlp" method="POST"
+  class="bg-[#0f0d12] border border-fuchsia-600/30 rounded-xl p-8 shadow-[0_0_20px_#ff00ff30] max-w-lg mx-auto">
+
+  <!-- Nombre -->
+  <div class="mb-6">
+    <label for="name" class="block text-left text-fuchsia-300 text-xs mb-2">Nombre</label>
+    <input type="text" id="name" name="name" required
+      class="w-full px-4 py-2 rounded-md bg-[#09070a] border border-fuchsia-700/40 text-fuchsia-200 
+      focus:outline-none focus:ring-2 focus:ring-fuchsia-500 transition-all duration-300" />
+  </div>
+
+  <!-- Email -->
+  <div class="mb-6">
+    <label for="email" class="block text-left text-fuchsia-300 text-xs mb-2">Email</label>
+    <input type="email" id="email" name="email" required
+      class="w-full px-4 py-2 rounded-md bg-[#09070a] border border-fuchsia-700/40 text-fuchsia-200 
+      focus:outline-none focus:ring-2 focus:ring-fuchsia-500 transition-all duration-300" />
+  </div>
+
+  <!-- Mensaje -->
+  <div class="mb-6">
+    <label for="message" class="block text-left text-fuchsia-300 text-xs mb-2">Mensaje</label>
+    <textarea id="message" name="message" rows="5" required
+      class="w-full px-4 py-2 rounded-md bg-[#09070a] border border-fuchsia-700/40 text-fuchsia-200 
+      focus:outline-none focus:ring-2 focus:ring-fuchsia-500 transition-all duration-300"></textarea>
+  </div>
+
+  <!-- Botón -->
+  <button type="submit"
+    class="w-full py-2 bg-fuchsia-500 text-black font-semibold rounded-md 
+    hover:brightness-110 hover:shadow-[0_0_15px_#ff00ff] transition-all duration-300">
+    Enviar mensaje
+  </button>
+
+  <!-- Mensaje dinámico -->
+  <p id="formMessage" class="text-center text-sm mt-3 hidden"></p>
+</form>
+
+  <!-- REDES -->
+    <div class="mt-12 flex justify-center gap-6 text-3xl">
+      <a href="https://github.com/abby15" target="_blank" class="text-fuchsia-400 hover:text-white transition-all duration-300">
+        <i class="devicon-github-original"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/abriljuanatrinidad" target="_blank" class="text-fuchsia-400 hover:text-white transition-all duration-300">
+        <i class="devicon-linkedin-plain"></i>
+      </a>
+      <a href="abriljuanatrinidad@gmail.com" class="text-fuchsia-400 hover:text-white transition-all duration-300">
+        <i class="devicon-gmail-plain"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // --- SCROLL SUAVE CORREGIDO ---
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+      const targetId = this.getAttribute("href");
+      const target = document.querySelector(targetId);
+
+      if (target) {
+        e.preventDefault();
+
+        const navbarHeight = document.getElementById("navbar").offsetHeight;
+        const offsetTop = target.offsetTop - navbarHeight + 10;
+
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+
+  // --- FORMULARIO ---
+  const form = document.getElementById("contactForm");
+  const msg = document.getElementById("formMessage");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      msg.textContent = "";
+      msg.classList.add("hidden");
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { "Accept": "application/json" },
+      });
+
+      if (response.ok) {
+        form.reset();
+        msg.textContent = "¡Mensaje enviado correctamente!";
+        msg.className = "text-fuchsia-400 animate-pulse mt-3";
+      } else {
+        msg.textContent = "Ocurrió un error al enviar el mensaje. Intentá nuevamente.";
+        msg.className = "text-red-400 mt-3";
+      }
+
+      setTimeout(() => msg.classList.add("hidden"), 4000);
+    });
+  }
+
+  // --- AOS ---
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+    });
+  }
+});
+</script>
+
+</body>
+</html>
